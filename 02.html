@@ -1,0 +1,38 @@
+---
+layout: default
+title: Add the contact form
+number: "02"
+prev_page: /01-create-a-rails-app
+permalink: /02-add-the-contact-form
+next_page: /03-self-documented-codebase
+
+---
+
+<article style="position: relative">
+  <script src="https://asciinema.org/a/vTYPayUYRWqIj0lu.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
+  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
+
+  <p>We build the first two pages—a form to collect the homeowner's phone number and its confirmation:</p>
+
+  <ol style="padding-left: 0; list-style-position: inside">
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a <a href='#'>Booking model</a> (with a required phone) calling: <code>rails g model booking phone:string!:index</code>.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Create a <a href='#'>Contacts controller</a> with two actions (<code>new</code>, <code>create</code>) and an <a href='#'>HTML form</a> to submit a phone number.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a <a href='#'>Confirmations controller</a> with one action (<code>show</code>) and an <a href='#'>HTML view</a> to display the confirmation.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Improve the design extracting common HTML and embedding Bootstrap in the <a href='#'>Application layout</a>.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a <a href='#'>Stimulus controller</a> to add separators to the phone number while it’s being typed.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Adjust the <a href='#'>routes</a> to display the pages at <code>/contact</code> and <code>/confirmation</code>.</li>
+  </ol>
+  
+  <br>
+
+  <div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
+    <div class='col'><div class='card text-bg-success'>
+      <img src='assets/images/screen02.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
+    </div></div>
+    <div class='col'><div class='card text-bg-success'>
+      <img src='assets/images/screen03.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
+    </div></div>
+  </div>
+
+  <p>Since we ask for a phone number, let’s use it to confirm the booking via SMS! <a class='ms-2' href='#'><strong>→</strong></a></p>
+</article>
