@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Send a confirmation SMS
+title: Enforce coding standards
 number: "04"
-prev_page: /03-self-documented-codebase
-permalink: /04-send-a-confirmation-sms
+prev_page: /03-improve-the-contact-form
+permalink: /04-enforce-coding-standards
+next_page: /05-send-a-confirmation-sms
 
 ---
 
@@ -11,27 +12,23 @@ permalink: /04-send-a-confirmation-sms
   <script src="https://asciinema.org/a/vTYPayUYRWqIj0lu.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
   <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
 
-  <p>We use the Twilio API to send messages and confirm they were delivered:</p>
+  <p>We specify our coding style and let our comments generate documentation:</p>
 
   <ol style="padding-left: 0; list-style-position: inside">
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a <a href='#'>Notification model</a> with: <code>rails g model notification booking:references delivered_at:datetime</code>.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Create a <a href='#'>Notified concern</a> to generate a notification whenever a booking is created.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a <a href='#'>Delivery model</a> with: <code>rails g model notification:references sid code</code>.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a <a href='#'>Stated concern</a> to manage the delivery status with PostgreSQL enums.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a <a href='#'>Deliverable concern</a> with one actions (<code>show</code>) and an <a href='#'>HTML view</a> to display the confirmation.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Improve the design extracting common HTML and embedding Bootstrap in the <a href='#'>Application layout</a>.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a <a href='#'>Stimulus controller</a> to add separators to the phone number while it’s being typed.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Adjust the <a href='#'>routes</a> to display the pages at <code>/contact</code> and <code>/confirmation</code>.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Adapt <code>.rubocop.yml</code> to your coding style.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Add yard to the Gemfile (and doc/ to .gitignore).</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Add yard-style comments on top of every public method and class.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Include coding style and 100% documentation check in <code>bin/ci</code>.</li>
   </ol>
   
   <br>
 
   <div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
     <div class='col'><div class='card text-bg-success'>
-      <img src='assets/images/screen02.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
+      <img src='assets/images/04-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
     </div></div>
     <div class='col'><div class='card text-bg-success'>
-      <img src='assets/images/screen03.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
+      <img src='assets/images/04-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
     </div></div>
   </div>
 
