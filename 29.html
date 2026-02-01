@@ -1,0 +1,36 @@
+---
+layout: default
+title: Fetch estimate from OpenAI
+number: "29"
+prev_page: /28-add-estimate-to-bookings
+permalink: /29-fetch-estimate-from-openai
+next_page: /30-stub-api-requests-in-tests
+---
+
+<article style="position: relative">
+  <script src="https://asciinema.org/a/FKzV5R5M9YBlJOnm.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
+  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
+
+  <p>We want homeowners to review how much the job would cost before creating a booking.</p>
+
+  <ol style="padding-left: 0; list-style-position: inside">
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Send an API request to OpenAI for each assessment.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Add a basic API client for API.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Store the OpenAI API key in Rails credentials.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Include the OpenAI client in the code coverage.</li>
+  </ol>
+  
+  <br>
+
+  <div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
+    <div class='col'><div class='card text-bg-success'>
+      <img src='assets/images/29-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
+    </div></div>
+    <div class='col'><div class='card text-bg-success'>
+      <img src='assets/images/29-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
+    </div></div>
+  </div>
+  
+    
+  <p>Since we ask for a phone number, let’s use it to confirm the booking via SMS! <a class='ms-2' href='#'><strong>→</strong></a></p>
+</article>

@@ -1,0 +1,36 @@
+---
+layout: default
+title: Validate ZIP codes
+number: "23"
+prev_page: /22-collect-zip-codes
+permalink: /23-validate-zip-codes
+next_page: /24-associate-zip-codes-to-bookings
+
+---
+
+<article style="position: relative">
+  <script src="https://asciinema.org/a/FKzV5R5M9YBlJOnm.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
+  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
+
+  <p>We want to ensure the entered ZIP code are valid U.S. 5-digit ZIP codes.</p>
+
+  <ol style="padding-left: 0; list-style-position: inside">
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Limit input to 5 digits.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a ZIP model backfilled with every valid code.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Display validation errors if ZIP cannot be found.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Set up ZIP fixture to check validation in tests.</li>
+  </ol>
+  
+  <br>
+
+  <div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
+    <div class='col'><div class='card text-bg-success'>
+      <img src='assets/images/20-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
+    </div></div>
+    <div class='col'><div class='card text-bg-success'>
+      <img src='assets/images/20-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
+    </div></div>
+  </div>
+  
+  <p>Since we ask for a phone number, let’s use it to confirm the booking via SMS! <a class='ms-2' href='#'><strong>→</strong></a></p>
+</article>

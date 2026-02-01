@@ -1,0 +1,37 @@
+---
+layout: default
+title: Send questions via SMS
+number: "21"
+prev_page: /20-let-admins-ask-questions
+permalink: /21-send-questions-via-sms
+next_page: /22-collect-zip-codes
+
+---
+
+<article style="position: relative">
+  <script src="https://asciinema.org/a/FKzV5R5M9YBlJOnm.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
+  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
+
+  <p>We want the question to be sent to the homeowner via SMS.</p>
+  <mark>Note: this is the end of Part 1 where we assume that we are a single handyman. Next we will become a franchise. And maybe I reduce to 20 episodes</mark>
+
+  <ol style="padding-left: 0; list-style-position: inside">
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Create a Notifiable concern for the Question model.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Adjust the recipient and content for the question.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Remove duplication using a parent concern.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Send SMS in a background job.</li>
+  </ol>
+  
+  <br>
+
+  <div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
+    <div class='col'><div class='card text-bg-success'>
+      <img src='assets/images/21-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
+    </div></div>
+    <div class='col'><div class='card text-bg-success'>
+      <img src='assets/images/21-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
+    </div></div>
+  </div>
+  
+  <p>Since we ask for a phone number, let’s use it to confirm the booking via SMS! <a class='ms-2' href='#'><strong>→</strong></a></p>
+</article>

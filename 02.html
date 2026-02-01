@@ -13,6 +13,8 @@ next_page: /03-improve-the-contact-form
   <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
 
   <p>We build the first two pages—a form to collect the homeowner's phone number and its confirmation:</p>
+  <mark>Originally I had def new as `@booking = Booking.new` but it's not required so I removed it</mark>
+  <mark>Here and in other places I have forgotten status: :see_other</mark>
 
   <ol style="padding-left: 0; list-style-position: inside">
     <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a <a href='#'>Booking model</a> with a phone attribute: <code>rails g model booking phone:string!:index</code>.</li>

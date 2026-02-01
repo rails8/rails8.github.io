@@ -1,0 +1,37 @@
+---
+layout: default
+title: Display ZIP codes to admins
+number: "25"
+prev_page: /24-associate-zip-codes-to-bookings
+permalink: /25-display-zip-codes-to-admins
+next_page: /26-store-user-journey
+
+---
+
+<article style="position: relative">
+  <script src="https://asciinema.org/a/FKzV5R5M9YBlJOnm.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
+  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
+
+  <p>We want admins to see all the ZIP codes and how many bookings there are.</p>
+
+  <ol style="padding-left: 0; list-style-position: inside">
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Group routes into admin vs. non-admin scopes.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Adjust controllers and views to the new scopes.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create new admin views to see all ZIP codes.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Use <code>counter_cache</code> to prevent N+1 queries.</li>
+  </ol>
+  
+  <br>
+
+  <div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
+    <div class='col'><div class='card text-bg-success'>
+      <img src='assets/images/25-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
+    </div></div>
+    <div class='col'><div class='card text-bg-success'>
+      <img src='assets/images/25-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
+    </div></div>
+  </div>
+
+    
+  <p>Since we ask for a phone number, let’s use it to confirm the booking via SMS! <a class='ms-2' href='#'><strong>→</strong></a></p>
+</article>

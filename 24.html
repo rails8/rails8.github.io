@@ -1,0 +1,25 @@
+---
+layout: default
+title: Associate ZIP codes to bookings
+number: "24"
+prev_page: /23-validate-zip-codes
+permalink: /24-associate-zip-codes-to-bookings
+next_page: /25-display-zip-codes-to-admins
+
+---
+
+<article style="position: relative">
+  <script src="https://asciinema.org/a/FKzV5R5M9YBlJOnm.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
+  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
+
+  <p>We want to store the association in the bookings table.</p>
+
+  <ol style="padding-left: 0; list-style-position: inside">
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Add association between bookings and ZIPs.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Backfill ZIP id from code in the bookings table.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Display all the booking ZIPs.</li>
+    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Use <code>include</code> to remove N+1 query.</li>
+  </ol>
+    
+  <p>Since we ask for a phone number, let’s use it to confirm the booking via SMS! <a class='ms-2' href='#'><strong>→</strong></a></p>
+</article>
