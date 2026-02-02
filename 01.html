@@ -1,24 +1,23 @@
 ---
-layout: default
+layout: day
 title: Create a Rails app
 number: "01"
 prev_page: /00-introduction
 permalink: /01-create-a-rails-app
 next_page: /02-add-the-contact-form
+asciinema: 58n2d9yxT2b9vOQ8
 
 ---
 
-<article style="position: relative">
-  <script src="https://asciinema.org/a/vTYPayUYRWqIj0lu.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
-  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
-  <p>We start with a brand new Rails app and give it a minimal setup:</p>
-  <ol style="padding-left: 0; list-style-position: inside">
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a Rails repo calling <code>rails new marketplace</code> with a few options: <code>--main</code> to point to the most recent version of Rails, <code>-d postgresql</code> to use PostgreSQL as the database, and <code>--skip-solid</code> to skip Solid (spoiler: you’ll use Redis instead).</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Clean up the <a href="#">Gemfile</a> to only include required libraries at their most recent version.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Replace <code>' 3000'</code> with <code>' 2026'</code> in the code so the server will run locally at a fancy URL. ✨</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Tell Rails not to generate unit tests for new models (spoiler: you’ll use system tests instead).</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create the local database with <code>bin/rails db:create</code>.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Start the server and open <a href="#">http://localhost:2026</a> to confirm everything is set up correctly.</li>
-  </ol>
-  <p>Now that we have a skeleton, let’s add the first resource <a class='ms-2' href='#'><strong>→</strong></a></p>
-</article>
+<p>We start with a brand new Rails app and give it a minimal setup:</p>
+
+<ol style="padding-left: 0; list-style-position: inside">
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a Rails repo calling <code>rails new marketplace</code> with a few options: <code>--main</code> to point to the most recent version of Rails, <code>-d postgresql</code> to use PostgreSQL as the database, and <code>--skip-solid</code> to skip Solid (spoiler: you’ll use Redis instead).</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Clean up the <a href="#">Gemfile</a> to only include required libraries at their most recent version.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Replace <code>' 3000'</code> with <code>' 2026'</code> in the code so the server will run locally at a fancy URL. ✨</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Tell Rails not to generate unit tests for new models (spoiler: you’ll use system tests instead).</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create the local database with <code>bin/rails db:create</code>.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Start the server and open <a href="#">http://localhost:2026</a> to confirm everything is set up correctly.</li>
+</ol>
+
+<p>Now that we have a skeleton, let’s add the first resource <a class='ms-2' href='#'><strong>→</strong></a></p>

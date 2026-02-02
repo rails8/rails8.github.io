@@ -1,36 +1,31 @@
 ---
-layout: default
+layout: day
 title: Handle form submission errors
 number: "14"
 prev_page: /13-add-categories
 permalink: /14-handle-form-submission-errors
 next_page: /15-update-and-destroy-categories
+asciinema: 5NN8UVD3CjgA1wxy
 
 ---
 
-<article style="position: relative">
-  <script src="https://asciinema.org/a/YeGxm0MX2iAMxzeV.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
-  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
+<p>We want to alert if the same category name exists</p>
 
-  <p>We want to alert if the same category name exists</p>
+<ol style="padding-left: 0; list-style-position: inside">
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Add <code>new</code> and <code>create</code> action to the Category controller.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Create a form to enter the name of a new category.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Display a flash notice when a category is created.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Ensure continuous integration after every feature.</li>
+</ol>
 
-  <ol style="padding-left: 0; list-style-position: inside">
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Add <code>new</code> and <code>create</code> action to the Category controller.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Create a form to enter the name of a new category.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Display a flash notice when a category is created.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Ensure continuous integration after every feature.</li>
-  </ol>
+<br>
+
+<div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
+  <div class='col'><div class='card text-bg-success'>
+    <img src='assets/images/14-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
+  </div></div>
+  <div class='col'><div class='card text-bg-success'>
+    <img src='assets/images/14-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
+  </div></div>
+</div>
   
-  <br>
-
-  <div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
-    <div class='col'><div class='card text-bg-success'>
-      <img src='assets/images/14-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
-    </div></div>
-    <div class='col'><div class='card text-bg-success'>
-      <img src='assets/images/14-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
-    </div></div>
-  </div>
-  
-  <p>Since we ask for a phone number, let’s use it to confirm the booking via SMS! <a class='ms-2' href='#'><strong>→</strong></a></p>
-</article>

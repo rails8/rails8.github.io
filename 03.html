@@ -1,36 +1,30 @@
 ---
-layout: default
+layout: day
 title: Improve the contact form
 number: "03"
 prev_page: /02-add-the-contact-form
 permalink: /03-improve-the-contact-form
 next_page: /04-enforce-coding-standards
+asciinema: 2n3Y5kue1013Z5Os
 
 ---
 
-<article style="position: relative">
-  <script src="https://asciinema.org/a/a0TEs4JYBvZcLKNz.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
-  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
+<p>We boost the security and the usability of the first two pages:</p>
 
-  <p>We boost the security and the usability of the first two pages:</p>
+<ol style="padding-left: 0; list-style-position: inside">
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Remove the booking ID from the <code>/contact</code> and <code>/confirmation</code> routes by using the Session.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Store only digits in the phone number and display in the US format.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Add Bootstrap to the <a href='#'>Application layout</a> and apply basic classes to the form elements.</li>
+  <!-- <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a <a href='#'>Stimulus controller</a> to add separators to the phone number while it’s being typed.</li> -->
+</ol>
 
-  <ol style="padding-left: 0; list-style-position: inside">
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Remove the booking ID from the <code>/contact</code> and <code>/confirmation</code> routes by using the Session.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Store only digits in the phone number and display in the US format.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Add Bootstrap to the <a href='#'>Application layout</a> and apply basic classes to the form elements.</li>
-    <!-- <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Create a <a href='#'>Stimulus controller</a> to add separators to the phone number while it’s being typed.</li> -->
-  </ol>
-  
-  <br>
+<br>
 
-  <div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
-    <div class='col'><div class='card'>
-      <img src='assets/images/03-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
-    </div></div>
-    <div class='col'><div class='card'>
-      <img src='assets/images/03-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
-    </div></div>
-  </div>
-
-  <p>Since we ask for a phone number, let’s use it to confirm the booking via SMS! <a class='ms-2' href='#'><strong>→</strong></a></p>
-</article>
+<div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
+  <div class='col'><div class='card'>
+    <img src='assets/images/03-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
+  </div></div>
+  <div class='col'><div class='card'>
+    <img src='assets/images/03-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
+  </div></div>
+</div>

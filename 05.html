@@ -1,36 +1,30 @@
 ---
-layout: default
+layout: day
 title: Send a confirmation SMS
 number: "05"
 prev_page: /04-self-documented-codebase
 permalink: /05-send-a-confirmation-sms
 next_page: /06-add-a-step-to-the-flow
+asciinema: V4c3CodBIEIYwdKG
 
 ---
 
-<article style="position: relative">
-  <script src="https://asciinema.org/a/oBpx2eI1IUDIsxrT.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
-  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
+<p>We use the Twilio API to send messages and confirm they were delivered:</p>
+<mark>I should change from ENV to Rails.app.credentials</mark>
 
-  <p>We use the Twilio API to send messages and confirm they were delivered:</p>
-  <mark>I should change from ENV to Rails.app.credentials</mark>
+<ol style="padding-left: 0; list-style-position: inside">
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Add the <a href='#'>twilio-ruby</a> gem to the <code>Gemfile</code>.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Add a callback to <code>Booking</code> to send an SMS on creation.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Copy the Twilio API credentials into your local environment.</li>
+</ol>
 
-  <ol style="padding-left: 0; list-style-position: inside">
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Add the <a href='#'>twilio-ruby</a> gem to the <code>Gemfile</code>.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Add a callback to <code>Booking</code> to send an SMS on creation.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Copy the Twilio API credentials into your local environment.</li>
-  </ol>
-  
-  <br>
+<br>
 
-  <div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
-    <div class='col'><div class='card text-bg-success'>
-      <img src='assets/images/05-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
-    </div></div>
-    <div class='col'><div class='card text-bg-success'>
-      <img src='assets/images/05-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
-    </div></div>
-  </div>
-
-  <p>Since we ask for a phone number, let’s use it to confirm the booking via SMS! <a class='ms-2' href='#'><strong>→</strong></a></p>
-</article>
+<div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
+  <div class='col'><div class='card text-bg-success'>
+    <img src='assets/images/05-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
+  </div></div>
+  <div class='col'><div class='card text-bg-success'>
+    <img src='assets/images/05-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
+  </div></div>
+</div>

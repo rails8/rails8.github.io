@@ -1,36 +1,31 @@
 ---
-layout: default
+layout: day
 title: Select category for bookings
 number: "16"
 prev_page: /15-update-and-destroy-categories
 permalink: /16-select-category-for-bookings
 next_page: /17-add-position-to-categories
+asciinema: LWrOIrdFvnsGOmxu
 
 ---
 
-<article style="position: relative">
-  <script src="https://asciinema.org/a/F0oSQbuYOOe3Kg7t.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
-  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
+<p>We want homeowners to pick an optional category for the booking</p>
 
-  <p>We want homeowners to pick an optional category for the booking</p>
+<ol style="padding-left: 0; list-style-position: inside">
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Add a step for homeowners to pick a category.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Ensure the step comes after specifying the name.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Specify that a booking optionally belongs to a category.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Prevent N+1 when displaying category of each booking.</li>
+</ol>
 
-  <ol style="padding-left: 0; list-style-position: inside">
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Add a step for homeowners to pick a category.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Ensure the step comes after specifying the name.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Specify that a booking optionally belongs to a category.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Prevent N+1 when displaying category of each booking.</li>
-  </ol>
+<br>
+
+<div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
+  <div class='col'><div class='card text-bg-success'>
+    <img src='assets/images/16-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
+  </div></div>
+  <div class='col'><div class='card text-bg-success'>
+    <img src='assets/images/16-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
+  </div></div>
+</div>
   
-  <br>
-
-  <div class='row row-cols-1 row-cols-md-2 g-4 mb-3 text-center'>
-    <div class='col'><div class='card text-bg-success'>
-      <img src='assets/images/16-01.png' class='shadow-sm card-img-top card-img-bottom' alt='contacts#new page'>
-    </div></div>
-    <div class='col'><div class='card text-bg-success'>
-      <img src='assets/images/16-02.png' class='shadow-sm card-img-top card-img-bottom' alt='confirmations#show page'>
-    </div></div>
-  </div>
-  
-  <p>Since we ask for a phone number, let’s use it to confirm the booking via SMS! <a class='ms-2' href='#'><strong>→</strong></a></p>
-</article>

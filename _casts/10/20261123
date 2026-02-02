@@ -1,4 +1,4 @@
-{"version":3,"term":{"cols":120,"rows":30,"type":"xterm-256color","theme":{"fg":"#000000","bg":"#ebebeb","palette":"#000000:#990000:#00a600:#999900:#0000b3:#b300b3:#00a6b3:#bfbfbf:#666666:#e60000:#00d900:#e6e600:#0000ff:#e600e6:#00e6e6:#e6e6e6"}},"timestamp":1769195099,"env":{"SHELL":"/bin/zsh"}}
+{"version":3,"term":{"cols":120,"rows":30,"type":"xterm-256color","theme":{"fg":"#000000","bg":"#ebebeb","palette":"#000000:#990000:#00a600:#999900:#0000b3:#b300b3:#00a6b3:#bfbfbf:#666666:#e60000:#00d900:#e6e600:#0000ff:#e600e6:#00e6e6:#e6e6e6"}},"timestamp":1769195099,"idle_time_limit":0.1,"env":{"SHELL":"/bin/zsh"}}
 [0.037, "o", "Restored session: Fri Jan 23 11:04:51 PST 2026\r\n"]
 [0.006, "o", "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                       \r \r"]
 [0.000, "o", "\u001b]7;file://William.local/Users/claudiob/code/marketplace\u0007"]

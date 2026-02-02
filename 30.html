@@ -1,25 +1,17 @@
 ---
-layout: default
+layout: day
 title: Stub API requests in tests
 number: "30"
 prev_page: /29-fetch-estimate-from-openai
 permalink: /30-stub-api-requests-in-tests
+asciinema: KZbFNn9HupBqEyyr
 ---
 
-<article style="position: relative">
-  <script src="https://asciinema.org/a/FKzV5R5M9YBlJOnm.js" id="asciicast-vTYPayUYRWqIj0lu" async="true"></script>
-  <div style="position: relative; z-index: 1; margin-top: -45px; background-color: #fdfafa; height: 15px">&nbsp;</div>
+<p>We do not want tests to hit OpenAI API and charge us for each request.</p>
 
-  <p>We do not want tests to hit OpenAI API and charge us for each request.</p>
-
-  <ol style="padding-left: 0; list-style-position: inside">
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Add the webmock gem to stub HTTP requests.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Set up webmock to work with Playwright.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Write mocks to emulate Twilio and OpenAI responses.</li>
-    <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Include the mocked estimate in the tests.</li>
-  </ol>
-  
-  
-    
-  <p>Since we ask for a phone number, let’s use it to confirm the booking via SMS! <a class='ms-2' href='#'><strong>→</strong></a></p>
-</article>
+<ol style="padding-left: 0; list-style-position: inside">
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-primary">▶︎</span></a> Add the webmock gem to stub HTTP requests.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Set up webmock to work with Playwright.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Write mocks to emulate Twilio and OpenAI responses.</li>
+  <li style="margin-top: 0.75rem"><a href="#"><span class="badge rounded-pill bg-secondary-subtle">▶︎</span></a> Include the mocked estimate in the tests.</li>
+</ol>
